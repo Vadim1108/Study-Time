@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Study_Time_Tracker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Study Time" Height="450" Width="550">
+    <Grid x:Name="Grid1">
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <SolidColorBrush Color="Gray" Opacity="0.6"/>
+        </Grid.Background>
+        <CheckBox x:Name="CheckBox1" HorizontalAlignment="Left" Margin="20,15,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="41,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button x:Name="ResetButton1" Content="Reset" HorizontalAlignment="Left" Margin="457,8,0,0" VerticalAlignment="Top" FontSize="18" Click="ResetButton1_Click"/>
+        <TextBox x:Name="InputHours" HorizontalAlignment="Left" Margin="332,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="18"/>
+        <TextBox x:Name="InputMinutes" HorizontalAlignment="Left" Margin="397,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="18"/>
+        <Button x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="462,360,0,0" VerticalAlignment="Top" FontSize="18"/>
+
     </Grid>
 </Window>

@@ -25,6 +25,9 @@ namespace Study_Time_Tracker
             InitializeComponent();
         }
 
-
+        private void ResetButton1_Click(object sender, RoutedEventArgs e)
+        {
+            TextBox1.Text = "Hello";
+        }
     }
 }
